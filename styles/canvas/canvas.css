@@ -1,0 +1,38 @@
+.main_canvas{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(270deg, #d1c1ff, #fff 47.77%, #feffcd);
+    display: flex;
+    flex-direction: row;   
+}
+.canvas_content{
+    overflow: hidden;
+    margin-left: calc(5rem + 10px);
+    flex: 1;
+}
+
+.canvas_dashboard{
+    position: sticky;
+    height: 5rem;
+    width: 100%;
+}
+
+.hr_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.hr{
+    width: 97%;
+    height: 1.6px;
+    background-color: gray;
+}
+
+.canvas_main_content{
+    margin:0 2rem;
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    padding: 3rem 0;
+}

@@ -1,0 +1,20 @@
+.loader_wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(270deg, #d1c1ff, #fff 47.77%, #feffcd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 6rem;
+    animation: rotation 6s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

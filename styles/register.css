@@ -1,0 +1,241 @@
+
+* { 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins',sans-serif; 
+    transition: all ease 0.3s;
+} 
+
+body { 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 2.5rem; 
+    background:  linear-gradient(270deg, #d1c1ff, #fff 47.77%, #feffcd);
+    
+}
+ 
+.register_container { 
+    /* backdrop-filter: blur(10px); */
+    background-color: rgba(255, 255, 255, 0.6); 
+    border: 1px solid black;
+    /* box-shadow: 0 0 6px 1px black; */
+    max-width: 700px; 
+    width: 100%;
+    padding: 25px 30px; 
+    border-radius: 1rem;
+    margin: 1.5rem;
+} 
+.ragister_header{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.register_container .title { 
+    flex: 1;
+    font-size: 25px; 
+    font-weight: 500; 
+    position: relative; 
+}
+
+.register_back{
+    cursor: pointer;
+    box-sizing: content-box;
+    right: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border:  1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.register_back:hover{
+    color: white;
+    background-color: black;
+}
+
+.register_container .title::before { 
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    height: 3px;
+    width: 30px; 
+    background: linear-gradient(270deg,#fff, #000 90%);
+} 
+.get_registered{
+    margin: 1.5rem 0;
+    font-size: 20px;
+}
+
+.select_user{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  flex-start;
+    gap: 0.5rem;
+    
+    
+}
+.select_user span{
+    font-size: 1.2rem;
+}
+.u_options{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+.user_options{
+    color: gray;
+    cursor: pointer;
+    width: 5em;
+    height: 3rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.user_options:hover{
+    border: 2px solid #9b59b6;
+    color: #000;
+}
+
+.gender{
+    padding: 1rem;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+.register_container form .user-details { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 20px 0 12px;
+} 
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px; 
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+
+form .button {
+    position: relative;
+    cursor: pointer;
+    height: 45px;
+    margin: 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+form .button:hover{
+    border: 2px solid #000;
+    color: #000;
+}
+
+form input[type = "radio"]{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+}
+form input[type = "submit"]{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+@media(max-width: 584px) {
+    .register_container {
+        max-width: 100%;
+    }
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .register_container form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;        
+    }
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+
+
+
+
+form .user-role-details .user-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .user-role-details .user-category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.user-role-details .user-category label {
+    display: flex;
+    align-items: center;
+}
+
+.user-role-details .user-category .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+
+#dot-4:checked ~ .user-category label .four, 
+#dot-5:checked ~ .user-category label .five {
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+

@@ -1,0 +1,111 @@
+/* h1::before { 
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    height: 3px;
+    width: 30px; 
+    background: linear-gradient(270deg,#fff, #000 90%);
+} 
+h1{
+    position: relative;
+} */
+
+
+/* 
+.main-container {
+    background-color: rgba(255, 255, 255, 0.6); 
+    border: 1px solid black;
+    max-width: 700px; 
+    width: 100%;
+    padding: 25px 30px;  
+    border-radius: 1rem;
+    margin: 1.5rem;
+} */
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background:  linear-gradient(270deg, #d1c1ff, #fff 47.77%, #feffcd);
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background:  linear-gradient(270deg, #d1c1ff, #fff 47.77%, #feffcd);
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    form {
+        padding: 0 20px;
+    }
+}
+
+
+/* Styling for the add students section */
+label {
+    display: block;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+small {
+    color: #888;
+    font-size: 12px;
+}
+
+
+ /* Optional CSS for styling */
+ #selected_files {
+    margin-top: 10px;
+}
+div.file-item {
+    margin-bottom: 5px;
+}
+button.delete-button {
+    margin-left: 10px;
+}

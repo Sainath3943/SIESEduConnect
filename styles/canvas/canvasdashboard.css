@@ -1,0 +1,21 @@
+.dashboard_wrapper{
+    width: 100%;
+    margin: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.main_dashboard{
+    color: white;
+    width: calc(100% - 7rem);
+    padding: 0 2rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
